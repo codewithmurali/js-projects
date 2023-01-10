@@ -10,11 +10,17 @@
   <body>
     <div class="login__card">
       <h1 class="login">Login</h1>
-      <form action="">
+      <form action="home.html">
         <label for="username">Username</label>
         <input type="text" name="user__input" required />
+        <p class="error" id="user__err">
+          <span>!</span> Enter the correct username.
+        </p>
         <label for="password">Password</label>
         <input type="password" name="pwd" required />
+        <p class="error" id="pass__err">
+          <span>!</span> Enter the correct password.
+        </p>
         <button>SUMIT</button>
       </form>
     </div>
