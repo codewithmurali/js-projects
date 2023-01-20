@@ -10,18 +10,36 @@
   <body>
     <div class="login__card">
       <h1 class="login">Login</h1>
-      <form action="home.html">
-        <label for="username">Username</label>
-        <input type="text" name="user__input" required />
-        <p class="error" id="user__err">
-          <span>!</span> Enter the correct username.
-        </p>
-        <label for="password">Password</label>
-        <input type="password" name="pwd" required />
-        <p class="error" id="pass__err">
-          <span>!</span> Enter the correct password.
-        </p>
-        <button>SUMIT</button>
+      <form class="login__form" id="form">
+        <div class="form--input--block">
+          <label>Username</label>
+          <input
+            id="username"
+            type="text"
+            name="user__input"
+            placeholder="Enter your Username"
+            required
+          />
+          <p class="error" id="user__err">
+            <span>!</span> Enter the correct username.
+          </p>
+        </div>
+
+        <div class="form--input--block">
+          <label>Password</label>
+          <input
+            id="password"
+            type="password"
+            name="pwd"
+            placeholder="Enter your Password"
+            required
+          />
+          <p class="error" id="pass__err">
+            <span>!</span> Enter the correct password.
+          </p>
+        </div>
+
+        <button id="btn" type="submit">Login</button>
       </form>
     </div>
     <script src="script.js"></script>
